@@ -1,0 +1,14 @@
+#Redis����
+spring:
+  redis:
+    database: 0
+    host: your public host
+    port: 6379
+    password: your redis password
+    lettuce:
+      pool:
+        max-active: 8 #���ӳ������������ʹ�ø�ֵ��ʾû�����ƣ�
+        max-wait: -1ms #���ӳ���������ȴ�ʱ�䣨ʹ�ø�ֵ��ʾû�����ƣ�
+        max-idle: 5  #���ӳ��е�����������
+        min-idle: 0 #���ӳ��е���С��������
+    timeout: 5000ms  #���ӳ�ʱʱ�䣨���룩
